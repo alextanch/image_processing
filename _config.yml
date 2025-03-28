@@ -1,0 +1,33 @@
+title: Обработка изображений
+author: Александр Танченко
+copyright: "2025"
+exclude_patterns: [images, _build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints"]
+only_build_toc_files: true
+notebook_interface: "notebook"
+parse:
+  myst_enable_extensions:
+    - amsmath
+    - dollarmath
+    - deflist
+    - colon_fence
+    
+execute:
+  run_in_temp: true
+  execute_notebooks: cache
+  timeout: 600 # 10 minutes
+  allow_errors: true
+  stderr_output: show
+
+launch_buttons:
+  notebook_interface: classic
+  thebe: true
+
+sphinx:
+  extra_extensions:
+    - sphinx_proof
+  config:
+    language: ru
+    proof_minimal_theme: false
+    html_show_copyright: false
+    mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  

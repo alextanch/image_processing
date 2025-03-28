@@ -1,0 +1,12 @@
+format: jb-book
+root: docs/intro
+options:
+  numbered: false
+
+# chapters:
+#   - file: docs/digital-images/acquisition
+
+parts:
+  - caption: "Цифровое изображение"
+    chapters:
+    - file: docs/digital-images/acquisition
